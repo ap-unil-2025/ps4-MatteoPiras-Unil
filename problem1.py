@@ -21,7 +21,8 @@ def create_number_list(start, end):
     """
     # TODO: Implement this function
     # Hint: Use range() and convert to list
-    pass
+    lista = range(start, end + 1)
+    return list(lista)
 
 
 def filter_even_numbers(numbers):
@@ -40,7 +41,13 @@ def filter_even_numbers(numbers):
     """
     # TODO: Implement this function
     # You can use a loop or list comprehension
-    pass
+    even_list = []
+    for i in list(numbers):
+        if i%2==0:
+            even_list.append(i)
+        else:
+            None
+    return even_list
 
 
 def square_numbers(numbers):
@@ -59,7 +66,9 @@ def square_numbers(numbers):
     """
     # TODO: Implement this function
     # Hint: Try a list comprehension!
-    pass
+    return [i**2 for i in numbers]
+    
+    
 
 
 def find_max_min(numbers):
